@@ -1,6 +1,4 @@
 import re
-from os import environ,getenv
-from Script import script
 
 id_pattern = re.compile(r'^.\d+$')
 def is_enabled(value, default):
@@ -42,7 +40,7 @@ SUPPORT_CHAT = environ.get('SUPPORT_CHAT', 'https://t.me/') #Support group link 
 #---------------------------------------------------------------
 #---------------------------------------------------------------
 IS_VERIFY = is_enabled('IS_VERIFY', True)
-#---------------------------------------------------------------
+
 TUTORIAL = environ.get("TUTORIAL", "https://t.me/")
 TUTORIAL_2 = environ.get("TUTORIAL_2", "https://t.me/")
 TUTORIAL_3 = environ.get("TUTORIAL_3", "https://t.me/")
