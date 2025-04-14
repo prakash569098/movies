@@ -1,4 +1,4 @@
-import re
+
 
 id_pattern = re.compile(r'^.\d+$')
 def is_enabled(value, default):
