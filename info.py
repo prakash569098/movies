@@ -1,15 +1,4 @@
-
-
-id_pattern = compile(r'^.\d+$')
-def is_enabled(value, default):
-    if value.lower() in ["true", "yes", "1", "enable", "y"]:
-        return True
-    elif value.lower() in ["false", "no", "0", "disable", "n"]:
-        return False
-    else:
-        return default
-#---------------------------------------------------------------
-#---------------------------------------------------------------         ,
+      
 SESSION = environ.get('SESSION', 'Media_search')
 API_ID = int(environ.get('API_ID', '22528446'))
 API_HASH = environ.get('API_HASH', '0d81bf18019c5f3839037d0ae737c358')
